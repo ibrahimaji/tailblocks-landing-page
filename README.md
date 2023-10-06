@@ -1,7 +1,53 @@
 This is landing page created using [https://tailblocks.cc/](Tailblocks.cc) from [https://www.youtube.com/@hqasmei](Honsa Qasmei Youtube Channel).
 My first time knowing about Tailblocks.cc. Super useful, super simple, super clean and good.
 
-## Getting Started
+# Initialization
+
+## Pre Setup
+
+1. Create `components` and `styles` folder. Move `globals.css` to `styles` folder.
+2. Remove everything inside `page`.
+3. Clean the `globals.css`.
+
+## Header
+
+1. Create `header.tsx` and copy from `Tailblocks`. Make sure to rename `class` to `className`.
+2. Inside `layout`, import the `Header` and insert into the `body`.
+
+## Footer
+
+1. Create `footer.tsx` and copy from `Tailblocks`.
+2. Import to `layout` and insert into the `body` after `children`.
+
+## Hero
+
+1. Create `hero-section` and copy from `Tailblocks`.
+2. Import to `page` and insert into the `main`.
+
+## Content
+
+1. Create `content` and copy from `Tailblocks`.
+2. Import to `page` and insert after `HeroSection`.
+
+## Feature
+
+1. Create `feature` and copy from `Tailblocks`.
+2. Import to `page` and insert after `Content`.
+
+## Contact
+
+1. Create `contact` and copy from `Tailblocks`.
+2. Import to `page` and insert after `Feature`. Create self-closing tag and remove `for` tag.
+3. Import to `page` and insert after `Feature`.
+
+# Creating a Dynamic Navbar Shadow Effect
+
+Create a custom hook that recognizes when we scroll down.
+
+1. Create folder called `hooks` and create new file `useScrollPosition`.
+2. Use `use client` and import `useState` and `useEffect`.
+3. Create a logic for `useState` and `useEffect`.
+4. Import `useScrollPosition` to `header`.
 
 First, run the development server:
 
